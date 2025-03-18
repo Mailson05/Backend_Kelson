@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor // construtores sem argumentos
 @AllArgsConstructor // construtores com argumentos
 @Data //ja faz get e setter
-@Table(name = "aluno") //criar tabela no banco de dados
+@Table(name = "aluno") //criar tabela no banco de dados s
 @Entity //Informar que e uma entidade
 public class Aluno {
     private String nome;
