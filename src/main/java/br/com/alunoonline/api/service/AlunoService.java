@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class AlunoService {
 
     @Autowired
-    AlunoRepository alunoRepository;
+    AlunoRepository alunoRepository; // ele injetar as dependencias da coisa
 
     public void criarAluno(Aluno aluno){
         alunoRepository.save(aluno);

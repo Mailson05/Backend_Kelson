@@ -11,11 +11,13 @@ import lombok.NoArgsConstructor;
 @Table(name = "aluno") //criar tabela no banco de dados s
 @Entity //Informar que e uma entidade
 public class Aluno {
-    private String nome;
-    private String cpf;
-    private String email;
+
     @Id // identificando como chave primario
     @GeneratedValue(strategy = GenerationType.AUTO) // no pessoal usar identity
     private Long id;
+    private String nome;
+    private String cpf;
+    private String email;
+
 
 }
