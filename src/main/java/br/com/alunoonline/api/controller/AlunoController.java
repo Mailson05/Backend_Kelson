@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-@RestController // significa boas praticas anotação
-@RequestMapping("/alunos") //path = caminho é em plural
+@RestController // significa boas praticas de comunicação - principio de arquitetura
+@RequestMapping("/alunos") //path = caminho é em plural / endereço mapeado 8080/alunos
 public class AlunoController {
 
     @Autowired
