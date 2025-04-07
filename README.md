@@ -1,7 +1,8 @@
 #Projeto de backend do professor Kelson
 
 Banco de dados
-![image](https://github.com/user-attachments/assets/db85cab9-918c-46ef-a767-bd591bd32cad)
+![image](https://github.com/user-attachments/assets/8035253d-c6f5-4456-924d-45d01e1bc797)
+
 
 Insomnia
 ![image](https://github.com/user-attachments/assets/a9d9174f-f1cd-4a8f-80b3-357ad152b0a3)
