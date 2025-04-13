@@ -33,7 +33,13 @@ public class AlunoController {
     @ResponseStatus(HttpStatus.OK) // @Pathvariable pega a id e tras
     public Optional<Aluno> buscarAlunoPorId(@PathVariable Long id){
         return alunoService.buscarAlunoPorId(id);
-
     }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deletarAlunoPorId(@PathVariable long id){
+        alunoService.deletarAlunoPorId(id);
+    }
+
 
 }
