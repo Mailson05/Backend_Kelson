@@ -1,16 +1,29 @@
 package br.com.alunoonline.api.model;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor // construtores sem argumentos
-@AllArgsConstructor // construtores com argumentos ( boas praticas )
-// @Data   -  ja faz get e setter
-@Table(name = "aluno") //criar tabela no banco de dados s
-@Entity //Informar que e uma entidade
-public class Aluno {
+
+@NoArgsConstructor
+@AllArgsConstructor
+//@Data
+@Table(name = "professor")
+@Entity
+public class Professor {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String nome;
+
+    private String cpf;
+
+    private String email;
+
+
 
     public Long getId() {
         return id;
@@ -43,13 +56,4 @@ public class Aluno {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    @Id // identificando como chave primario
-    @GeneratedValue(strategy = GenerationType.AUTO) // no pessoal usar identity
-    private Long id;
-    private String nome;
-    private String cpf;
-    private String email;
-
-
 }

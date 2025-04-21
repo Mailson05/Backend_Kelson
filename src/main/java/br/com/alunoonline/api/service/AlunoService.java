@@ -44,7 +44,7 @@ public class AlunoService { // ele que tem a regra de negocio
 
         // E SE NAO EXISTIR ESSE ALUNO ?
         if (alunoDoBancoDeDados.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Aluno não encontrato no banco de daods");  //Lançando uma nova respondes 404 not found
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Aluno não encontrato no banco de dados");  //Lançando uma nova respondes 404 not found
         }
         // SE CHEGAR AQUI, SIGINIFICA QUE EXISTE ALUNO COM ESSE ID!
         // VOU ARMAZENAR-LO EM UMA VARIAVEL PARA DEPOIS EDITA-LO.
