@@ -16,7 +16,7 @@ public class ProfessorController {
     @Autowired
     ProfessorService professorService;
 
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED) //201 created
     @PostMapping
     public void criarProfessor(@RequestBody Professor professor) { professorService.criarProfessor(professor);}
 
