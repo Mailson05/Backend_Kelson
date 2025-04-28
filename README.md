@@ -21,6 +21,49 @@ Insomnia - deletarAlunoPorId
 Banco de dados - deletarAlunoPorId
 ![image](https://github.com/user-attachments/assets/109f08c7-b1ed-4f1d-aa0d-5f91a0d0d9f7)
 
+Banco de dados - criarDisciplina
+![image](https://github.com/user-attachments/assets/4c2d442b-25ed-4033-aa37-cd1c2a4b94f2)
+
+Insomnia - criarDisciplina
+![image](https://github.com/user-attachments/assets/8b46a4d3-2877-48aa-b9af-8226ab0e70a9)
+
+Banco de dados - listarTodasDisciplinas
+![image](https://github.com/user-attachments/assets/044a3dda-c38d-4a1b-9a53-25f73e9b9b80)
+
+Insomnia - listarTodasDisciplinas
+![image](https://github.com/user-attachments/assets/9a100673-b869-433a-bbb5-52bf4661b8fc)
+
+Insomnia - buscarDisciplinaPorId
+![image](https://github.com/user-attachments/assets/349bfb23-0936-42f2-b375-73298926ebbd)
+
+Insomnia - deletarDisciplinaPorId
+![image](https://github.com/user-attachments/assets/b721e0a9-41ce-4a16-8f9c-d986e96b8706)
+
+Banco de dados - deletarDisciplinaPorId
+![image](https://github.com/user-attachments/assets/74095313-39e7-46bd-8dfc-3a06e229d3b6)
+
+Insomnia - atualizarDisciplinaPorId
+listando
+![image](https://github.com/user-attachments/assets/df902390-78f6-4c46-9946-752945bd4b59)
+atualizando
+![image](https://github.com/user-attachments/assets/f43f6359-755d-4af7-8a67-dc252bea7397)
+
+Banco de dados - atualizarDisciplinaPorID
+![image](https://github.com/user-attachments/assets/8b8506a6-94c6-4e18-9f61-a00d746e7cab)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
