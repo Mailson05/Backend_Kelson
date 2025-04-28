@@ -48,7 +48,7 @@ listando
 atualizando
 ![image](https://github.com/user-attachments/assets/f43f6359-755d-4af7-8a67-dc252bea7397)
 
-Banco de dados - atualizarDisciplinaPorID
+Banco de dados - atualizarDisciplinaPorId
 ![image](https://github.com/user-attachments/assets/8b8506a6-94c6-4e18-9f61-a00d746e7cab)
 
 
