@@ -24,7 +24,7 @@ public class Disciplina {
 
     @ManyToOne// Relacionamento ( muitas disciplinas para um professor)
     @JoinColumn(name = "professor_id") //chave estrageira ( nome da tabela referenciando com chave primaria, junção de coluna)
-    private Professor professor; // Relacionamento JPA ( fazendo com que o banco diga 1 para N )
+    private Professor professor; // Relacionamento JPA ( fazendo com que o banco diga 1 para N ) JAva persitencia api
 
     public Long getId() {
         return id;
