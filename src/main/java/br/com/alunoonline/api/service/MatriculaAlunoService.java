@@ -55,4 +55,20 @@ public class MatriculaAlunoService {
         matriculaAlunoParaEditar.setDisciplina(matriculaAluno.getDisciplina());
     }
 
+    public void trancarMatricula(Long matriculaAlunoId) {
+        // Antes de trancar, verifica se a matricula existe
+        MatriculaAluno matriculaAluno = matriculaAlunoRepository.findById(matriculaAlunoId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Matricula Aluno não encontrada"));
+
+        // So vai deixar trancar, se o status ATUAL for MATRICULAOD
+        if (matriculaAluno.getStatus().equals(MatriculaAlunoStatusEnum.MATRICULADO)){
+            matriculaAluno.setStatus(MatriculaAlunoStatusEnum.TRANCADO);
+            matriculaAlunoRepository.save(matriculaAluno);
+        }else {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Só é possivel trancar com o status MATRICULADO");
+
+        }
+    }
+
 }

@@ -49,4 +49,11 @@ public class MatriculaAlunoController {
     public void atualizarMatriculaAlunoPorId(@PathVariable Long id, @RequestBody MatriculaAluno matriculaAluno){
         matriculaAlunoService.atualizarMatriculaAlunoPorId(id,matriculaAluno);
     }
+
+    @PatchMapping("/trancar/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void trancarMatricula(@PathVariable Long id){
+        matriculaAlunoService.trancarMatricula(id);
+
+    }
 }
