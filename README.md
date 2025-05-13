@@ -51,6 +51,23 @@ atualizando
 Banco de dados - atualizarDisciplinaPorId
 ![image](https://github.com/user-attachments/assets/8b8506a6-94c6-4e18-9f61-a00d746e7cab)
 
+Insomnia - trancarMatricula
+![image](https://github.com/user-attachments/assets/3997644b-7704-428f-84db-5916c7613032)
+
+Banco de dados - trcancarMatricula
+![image](https://github.com/user-attachments/assets/469c2166-eec7-4c60-9023-8b0d1b35e69c)
+
+Documentação - Swagger
+![image](https://github.com/user-attachments/assets/4bacb196-c696-45d9-a959-623b46e702df)
+![image](https://github.com/user-attachments/assets/fbc69551-ce32-433d-b797-c7012006a1eb)
+![image](https://github.com/user-attachments/assets/c5632fa0-4e43-4173-95b3-97a4f4370f1a)
+
+
+
+
+
+
+
 
 
 
