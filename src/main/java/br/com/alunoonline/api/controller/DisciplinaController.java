@@ -48,6 +48,13 @@ public class DisciplinaController {
         disciplinaService.atualizarDisciplinaPorId(id, disciplina);
     }
 
+    @GetMapping("/professor/{professorId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Disciplina> listarDisciplinaDoProf(@PathVariable Long professorId){
+        return disciplinaService.listarDisciplinaDoProf(professorId);
+
+    }
+
 
 }
 

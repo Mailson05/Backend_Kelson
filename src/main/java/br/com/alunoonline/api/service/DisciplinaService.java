@@ -54,4 +54,8 @@ public class DisciplinaService {
 
         disciplinaRepository.save(disciplinaParaEditar);
     }
+
+    public List<Disciplina> listarDisciplinaDoProf(Long professorId){
+        return disciplinaRepository.findByProfessorId(professorId);
+    }
 }
