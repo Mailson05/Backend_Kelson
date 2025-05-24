@@ -12,8 +12,9 @@ public class
 SwaggerConfig {
 
     /*
-    Vai ficar disponível a doc swagger na url: http://localhost:8080/swagger-ui/index.html
+    Vai ficar disponível  doc swagger na url: http://localhost:8080/swagger-ui/index.html
     */
+
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
@@ -22,4 +23,7 @@ SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
+
 }
+
+
