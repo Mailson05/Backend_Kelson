@@ -18,10 +18,10 @@ Sumário
   
 🔹 Professor Controller
 GET /professores
-Retorna a lista de todos os professores.
+ - Retorna a lista de todos os professores.
 
 GET /professores/{id}
-Retorna os dados de um professor específico por ID.
+ - Retorna os dados de um professor específico por ID.
 
 POST /professores
 Cria um novo professor.
