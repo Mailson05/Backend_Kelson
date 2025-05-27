@@ -26,81 +26,88 @@ GET /professores/{id}
  - Retorna os dados de um professor específico por ID.
 
 POST /professores
-Cria um novo professor.
+ - Cria um novo professor.
 
 PUT /professores/{id}
-Atualiza os dados de um professor existente.
+ - Atualiza os dados de um professor existente.
 
 DELETE /professores/{id}
-Remove um professor por ID.
+ - Remove um professor por ID.
 
 ---------------------------------------------------------------
 
 🔹 Aluno Controller
 GET /alunos
-Retorna a lista de todos os alunos.
+ - Retorna a lista de todos os alunos.
 
 GET /alunos/{id}
-Retorna os dados de um aluno específico.
+ - Retorna os dados de um aluno específico.
 
 POST /alunos
-Cria um novo aluno.
+ - Cria um novo aluno.
 
 PUT /alunos/{id}
-Atualiza as informações de um aluno.
+ - Atualiza as informações de um aluno.
 
 DELETE /alunos/{id}
-Remove um aluno por ID.
+ - Remove um aluno por ID.
 
 -------------------------------------------------------------
 
 🔹 Disciplina Controller
 GET /disciplinas
-Lista todas as disciplinas.
+ - Lista todas as disciplinas.
 
 GET /disciplinas/{id}
-Retorna os dados de uma disciplina por ID.
+ - Retorna os dados de uma disciplina por ID.
 
 POST /disciplinas
-Cria uma nova disciplina.
+ - Cria uma nova disciplina.
 
 PUT /disciplinas/{id}
-Atualiza os dados de uma disciplina.
+ - Atualiza os dados de uma disciplina.
 
 DELETE /disciplinas/{id}
-Remove uma disciplina específica.
+ - Remove uma disciplina específica.
 
 GET /disciplinas/professor/{professorId}
-Retorna todas as disciplinas ministradas por um professor.
+ - Retorna todas as disciplinas ministradas por um professor.
 
 ----------------------------------------------------------------
 
 🔹 Matrícula Aluno Controller
 GET /matriculas
-Retorna a lista de todas as matrículas.
+ - Retorna a lista de todas as matrículas.
 
 GET /matriculas/{id}
-Retorna os dados de uma matrícula específica.
+ - Retorna os dados de uma matrícula específica.
 
 POST /matriculas
-Realiza uma nova matrícula de aluno em disciplina(s).
+ - Realiza uma nova matrícula de aluno em disciplina(s).
 
 PUT /matriculas/{id}
-Atualiza uma matrícula existente.
+ - Atualiza uma matrícula existente.
 
 DELETE /matriculas/{id}
-Remove uma matrícula por ID.
+ - Remove uma matrícula por ID.
 
 PATCH /matriculas/trancar/{id}
-Tranca uma matrícula (status atualizado).
+ - Tranca uma matrícula (status atualizado).
 
 PATCH /matriculas/atualizar-notas/{id}
-Atualiza as notas da matrícula de um aluno.
+ - Atualiza as notas da matrícula de um aluno.
 
 GET /matriculas/emitir-historico/{alunoId}
-Emite o histórico escolar de um aluno.
+ - Emite o histórico escolar de um aluno.
 
 -------------------------------------------------------------------------------------
+ Exemplos de Requisição
+
+* Criar um aluno
+
+json
+![image](https://github.com/user-attachments/assets/49253db7-7e5f-444a-829c-bb8219cedbb7)
+
 
 Banco de dados - criarAluno
 ![image](https://github.com/user-attachments/assets/d0371d4e-3b9b-4b79-b8b8-1c7dc7037dd4)
