@@ -15,11 +15,8 @@ Sumário
 
   Link Swagger : http://localhost:8080/swagger-ui/index.html#/
 
- Base URL
- http://localhost:8080
 
-
-ENDPOINTS - FUNCIONALIDADES
+[ENDPOINTS - FUNCIONALIDADES]
   
 🔹 Professor Controller
 GET /professores
