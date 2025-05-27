@@ -14,6 +14,44 @@ Sumário
 - [Documentação da API]
 
   Link Swagger : http://localhost:8080/swagger-ui/index.html#/
+-----------------------------------------------------------------------
+- [Mapeamento]
+  src/
+├── main/
+│   ├── java/
+│   │   └── br/com/alunoonline/api/
+│   │       ├── config/
+│   │       │   └── SwaggerConfig.java
+│   │       ├── controller/
+│   │       │   ├── AlunoController.java
+│   │       │   ├── DisciplinaController.java
+│   │       │   ├── MatriculaAlunoController.java
+│   │       │   └── ProfessorController.java
+│   │       ├── dtos/
+│   │       │   ├── AtualizarNotasRequestDTO.java
+│   │       │   ├── DisciplinasAlunoResponseDTO.java
+│   │       │   └── HistoricoAlunoResponseDTO.java
+│   │       ├── enums/
+│   │       │   └── MatriculaAlunoStatusEnum.java
+│   │       ├── model/
+│   │       │   ├── Aluno.java
+│   │       │   ├── Disciplina.java
+│   │       │   ├── MatriculaAluno.java
+│   │       │   └── Professor.java
+│   │       ├── repository/
+│   │       │   ├── AlunoRepository.java
+│   │       │   ├── DisciplinaRepository.java
+│   │       │   ├── MatriculaAlunoRepository.java
+│   │       │   └── ProfessorRepository.java
+│   │       ├── service/
+│   │       │   ├── AlunoService.java
+│   │       │   ├── DisciplinaService.java
+│   │       │   ├── MatriculaAlunoService.java
+│   │       │   └── ProfessorService.java
+│   │       └── AlunoOnlineApplication.java
+│   └── resources/
+│       └── application.properties
+
 ----------------------------------------------------------------------------------
 
 [ENDPOINTS - FUNCIONALIDADES]
