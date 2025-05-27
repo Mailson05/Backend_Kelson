@@ -2,7 +2,7 @@
 Sumário
 
 - [Visão Geral]
-  Desenvolvido um sistema academico, onde sera feito todo manuseio dos alunos,disciplinas e professores.
+    - Desenvolvido um sistema academico, onde sera feito todo manuseio dos alunos,disciplinas e professores.
   
   
 - [Tecnologias Utilizadas]
