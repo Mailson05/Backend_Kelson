@@ -6,15 +6,20 @@ Sumário
   
   
 - [Tecnologias Utilizadas]
-   - Spring
-   - Insominia ( Framework)
-   - Dbeaver ( banco de dados )
+   - Java ( Linguagem )
+   - Spring( Framework)
+   - PostgreSQL ( banco de dados )
+   - Swagger, insominia ( demais ferraentas )
   
 - [Documentação da API]
+
+  Link Swagger : http://localhost:8080/swagger-ui/index.html#/
 
  Base URL
  http://localhost:8080
 
+
+ENDPOINTS - FUNCIONALIDADES
   
 🔹 Professor Controller
 GET /professores
