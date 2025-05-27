@@ -14,7 +14,7 @@ Sumário
 - [Documentação da API]
 
   Link Swagger : http://localhost:8080/swagger-ui/index.html#/
-
+----------------------------------------------------------------------------------
 
 [ENDPOINTS - FUNCIONALIDADES]
   
@@ -34,7 +34,7 @@ Atualiza os dados de um professor existente.
 DELETE /professores/{id}
 Remove um professor por ID.
 
-
+---------------------------------------------------------------
 
 🔹 Aluno Controller
 GET /alunos
@@ -52,7 +52,7 @@ Atualiza as informações de um aluno.
 DELETE /alunos/{id}
 Remove um aluno por ID.
 
-
+-------------------------------------------------------------
 
 🔹 Disciplina Controller
 GET /disciplinas
