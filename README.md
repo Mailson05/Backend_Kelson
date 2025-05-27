@@ -106,6 +106,7 @@ GET /matriculas/emitir-historico/{alunoId}
 * Criar um aluno
 
 json
+
 ![image](https://github.com/user-attachments/assets/49253db7-7e5f-444a-829c-bb8219cedbb7)
 
 * Criar uma disciplina
@@ -114,7 +115,7 @@ json
 
 ![image](https://github.com/user-attachments/assets/831039c4-1b3f-439b-a72d-739463741315)
 
-*Efetuar matrícula
+* Efetuar matrícula
 
 json
 
