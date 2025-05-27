@@ -73,6 +73,8 @@ Remove uma disciplina específica.
 GET /disciplinas/professor/{professorId}
 Retorna todas as disciplinas ministradas por um professor.
 
+----------------------------------------------------------------
+
 🔹 Matrícula Aluno Controller
 GET /matriculas
 Retorna a lista de todas as matrículas.
@@ -98,10 +100,12 @@ Atualiza as notas da matrícula de um aluno.
 GET /matriculas/emitir-historico/{alunoId}
 Emite o histórico escolar de um aluno.
 
-
+-------------------------------------------------------------------------------------
 
 Banco de dados - criarAluno
 ![image](https://github.com/user-attachments/assets/d0371d4e-3b9b-4b79-b8b8-1c7dc7037dd4)
+
+------------------------------------------------------------------------------------
 
 Insomnia - criarAluno
 ![image](https://github.com/user-attachments/assets/cdb54195-7194-48ef-a2eb-9808833b70e9)
