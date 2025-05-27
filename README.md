@@ -108,6 +108,16 @@ GET /matriculas/emitir-historico/{alunoId}
 json
 ![image](https://github.com/user-attachments/assets/49253db7-7e5f-444a-829c-bb8219cedbb7)
 
+* Criar uma disciplina
+json
+![image](https://github.com/user-attachments/assets/831039c4-1b3f-439b-a72d-739463741315)
+
+*Efetuar matrícula
+
+json
+![image](https://github.com/user-attachments/assets/0b162960-99c2-4602-99ca-ee20cdf365a6)
+
+-------------------------------------------------------------------------------------------
 
 Banco de dados - criarAluno
 ![image](https://github.com/user-attachments/assets/d0371d4e-3b9b-4b79-b8b8-1c7dc7037dd4)
