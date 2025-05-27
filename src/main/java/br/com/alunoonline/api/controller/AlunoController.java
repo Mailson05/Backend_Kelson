@@ -17,6 +17,7 @@ public class AlunoController {
     @Autowired  //injentando as dependencias
     AlunoService alunoService; // ele injeta as dependencia
 
+
     @ResponseStatus(HttpStatus.CREATED) // resposta 201 creadted ( codigo de status de um post bem sucedido)
     @PostMapping // tipo da requisicção
     public void criarAluno(@RequestBody Aluno aluno) { //transdforma o json em objeto

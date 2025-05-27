@@ -45,7 +45,7 @@ public class Aluno {
     }
 
     @Id // identificando como chave primario
-    @GeneratedValue(strategy = GenerationType.AUTO) // no pessoal usar identity
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nome;
     private String cpf;
