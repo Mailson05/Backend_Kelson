@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Table(name = "matricula_aluno")
 @Entity
 public class MatriculaAluno {
