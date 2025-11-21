@@ -1,5 +1,6 @@
 package br.com.alunoonline.api.security;
 
+
 import br.com.alunoonline.api.usuario.Usuario;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

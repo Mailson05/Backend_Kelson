@@ -1,9 +1,10 @@
-package alunoonline.alunoonline.controller;
+package br.com.alunoonline.api.controller;
 
-import alunoonline.alunoonline.security.DadosTokenJWT;
-import alunoonline.alunoonline.security.TokenService;
-import alunoonline.alunoonline.usuario.DadosAutenticacao;
-import alunoonline.alunoonline.usuario.Usuario;
+
+import br.com.alunoonline.api.security.DadosTokenJWT;
+import br.com.alunoonline.api.security.TokenService;
+import br.com.alunoonline.api.usuario.DadosAutenticacao;
+import br.com.alunoonline.api.usuario.Usuario;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
