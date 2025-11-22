@@ -35,17 +35,17 @@ public class SecurityConfig {
                     req.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll();
 
                     // === SOMENTE ADMIN ===
-                    req.requestMatchers("/alunoscasa/**").hasRole("ADMIN");
-                    req.requestMatchers("/professorescasa/**").hasRole("ADMIN");
-                    req.requestMatchers("/disciplinascasa/**").hasRole("ADMIN");
-                    req.requestMatchers(HttpMethod.POST, "/matriculascasa").hasRole("ADMIN");
-                    req.requestMatchers(HttpMethod.PATCH, "/matriculascasa/trancar/**").hasRole("ADMIN");
+                    req.requestMatchers("/alunos/**").hasRole("ADMIN");
+                    req.requestMatchers("/professores/**").hasRole("ADMIN");
+                    req.requestMatchers("/disciplinas/**").hasRole("ADMIN");
+                    req.requestMatchers(HttpMethod.POST, "/matriculas").hasRole("ADMIN");
+                    req.requestMatchers(HttpMethod.PATCH, "/matriculas/trancar/**").hasRole("ADMIN");
 
                     // === PROFESSOR (e admin) ===
-                    req.requestMatchers(HttpMethod.PATCH, "/matriculascasa/atualizar-notas/**").hasAnyRole("PROFESSOR", "ADMIN");
+                    req.requestMatchers(HttpMethod.PATCH, "/matriculas/atualizar-notas/**").hasAnyRole("PROFESSOR", "ADMIN");
 
                     // === ALUNOS (e admin) ===
-                    req.requestMatchers(HttpMethod.GET, "/matriculascasa/emitir-historico/**").authenticated();
+                    req.requestMatchers(HttpMethod.GET, "/matriculas/emitir-historico/**").authenticated();
 
 
                     // Outras requisições

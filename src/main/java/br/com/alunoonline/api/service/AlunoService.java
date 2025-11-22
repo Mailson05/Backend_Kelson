@@ -1,9 +1,14 @@
 package br.com.alunoonline.api.service;
 
+import br.com.alunoonline.api.dtos.DadosCriacaoAlunosDTO;
 import br.com.alunoonline.api.model.Aluno;
 import br.com.alunoonline.api.repository.AlunoRepository;
+import br.com.alunoonline.api.usuario.Role;
+import br.com.alunoonline.api.usuario.Usuario;
+import br.com.alunoonline.api.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -14,11 +19,29 @@ import java.util.Optional;
 public class AlunoService { // ele que tem a regra de negocio
 
     @Autowired
-    AlunoRepository alunoRepository; // ele injetar as dependencias, Repository que tem comunicação com Banco de dados
+    AlunoRepository alunoRepository;
 
-    public void criarAluno(Aluno aluno){
-        alunoRepository.save(aluno);
+    @Autowired
+    UsuarioRepository usuarioRepository;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;// ele injetar as dependencias, Repository que tem comunicação com Banco de dados
+
+    public void criarAluno(DadosCriacaoAlunosDTO dados) {
+
+        Aluno novoAluno = new Aluno();
+        novoAluno.setNome(dados.nome());
+        novoAluno.setCpf(dados.cpf());
+        novoAluno.setEmail(dados.email());
+
+        alunoRepository.save(novoAluno);
+
+        Usuario novoUsuario = new Usuario();
+        novoUsuario.setLogin(dados.email());
+        novoUsuario.setSenha(passwordEncoder.encode(dados.senha()));
+        novoUsuario.setRole(Role.ALUNO);
+
+        usuarioRepository.save(novoUsuario);
     }
 
     public List<Aluno> listarTodosAlunos(){

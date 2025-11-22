@@ -1,6 +1,7 @@
 package br.com.alunoonline.api.controller;
 
 
+import br.com.alunoonline.api.dtos.DadosCriacaoAlunosDTO;
 import br.com.alunoonline.api.model.Aluno;
 import br.com.alunoonline.api.service.AlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class AlunoController {
 
     @ResponseStatus(HttpStatus.CREATED) // resposta 201 creadted ( codigo de status de um post bem sucedido)
     @PostMapping // tipo da requisicção
-    public void criarAluno(@RequestBody Aluno aluno) { //transdforma o json em objeto
+    public void criarAluno(@RequestBody DadosCriacaoAlunosDTO aluno) { //transdforma o json em objeto
         alunoService.criarAluno(aluno);
     }
 
