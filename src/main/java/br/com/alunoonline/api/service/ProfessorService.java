@@ -1,10 +1,17 @@
 package br.com.alunoonline.api.service;
 
 
+import br.com.alunoonline.api.dtos.DadosCriacaoAlunosDTO;
+import br.com.alunoonline.api.dtos.ProfessorCreateDTO;
+import br.com.alunoonline.api.model.Aluno;
 import br.com.alunoonline.api.model.Professor;
 import br.com.alunoonline.api.repository.ProfessorRepository;
+import br.com.alunoonline.api.usuario.Role;
+import br.com.alunoonline.api.usuario.Usuario;
+import br.com.alunoonline.api.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -17,10 +24,25 @@ public class ProfessorService {
 
     @Autowired
     ProfessorRepository professorRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+    @Autowired
+    UsuarioRepository usuarioRepository;
 
-    public void criarProfessor(Professor professor){
-        professorRepository.save(professor);
+    public void criarProfessor(ProfessorCreateDTO professorCreateDTO){
+        Professor novoProfessor = new Professor();
+        novoProfessor.setNome(professorCreateDTO.nome());
+        novoProfessor.setCpf(professorCreateDTO.cpf());
+        novoProfessor.setEmail(professorCreateDTO.email());
 
+        professorRepository.save(novoProfessor);
+
+        Usuario novoUsuario = new Usuario();
+        novoUsuario.setLogin(professorCreateDTO.email());
+        novoUsuario.setSenha(passwordEncoder.encode(professorCreateDTO.senha()));
+        novoUsuario.setRole(Role.PROFESSOR);
+
+        usuarioRepository.save(novoUsuario);
     }
 
     public List<Professor> listarTodosProfessores(){

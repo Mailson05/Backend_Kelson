@@ -1,5 +1,6 @@
 package br.com.alunoonline.api.controller;
 
+import br.com.alunoonline.api.dtos.ProfessorCreateDTO;
 import br.com.alunoonline.api.model.Professor;
 import br.com.alunoonline.api.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class ProfessorController {
 
     @ResponseStatus(HttpStatus.CREATED) //201 created
     @PostMapping
-    public void criarProfessor(@RequestBody Professor professor) { professorService.criarProfessor(professor);}
+    public void criarProfessor(@RequestBody ProfessorCreateDTO professorCreateDTO) { professorService.criarProfessor(professorCreateDTO);}
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)

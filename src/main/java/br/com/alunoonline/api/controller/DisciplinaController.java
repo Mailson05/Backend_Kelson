@@ -1,6 +1,7 @@
 package br.com.alunoonline.api.controller;
 
 
+import br.com.alunoonline.api.dtos.DisciplinaCriacaoDTO;
 import br.com.alunoonline.api.model.Disciplina;
 import br.com.alunoonline.api.service.DisciplinaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class DisciplinaController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void criarDisciplina(@RequestBody Disciplina disciplina){
+    public void criarDisciplina(@RequestBody DisciplinaCriacaoDTO disciplina){
         disciplinaService.criarDisciplina(disciplina);
     }
 
